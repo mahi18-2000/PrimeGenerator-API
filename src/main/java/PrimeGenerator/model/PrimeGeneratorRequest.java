@@ -1,3 +1,5 @@
+//This class defines the Object type of the request which we will get from our users.
+
 package PrimeGenerator.model;
 
 public class PrimeGeneratorRequest {

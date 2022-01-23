@@ -1,3 +1,5 @@
+// This class describes the form in which we want to store logs in our H2 Database.
+
 package PrimeGenerator.database;
 
 import PrimeGenerator.model.Algorithm;

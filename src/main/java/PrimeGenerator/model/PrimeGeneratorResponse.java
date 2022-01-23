@@ -1,3 +1,4 @@
+// This class represent the Object type for the response that we will send to our users when they post a request.
 package PrimeGenerator.model;
 
 import lombok.AllArgsConstructor;

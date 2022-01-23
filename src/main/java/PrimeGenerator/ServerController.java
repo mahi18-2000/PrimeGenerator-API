@@ -25,22 +25,26 @@ class ServerController {
         this.primeGeneratorService = new PrimeGeneratorService(repository);
     }
 
+    // Return all the logs from our database
     @GetMapping("/service-logs")
     List<ServiceLog> getServiceLogs() {
         return repository.findAll();
     }
 
+    //Return the specified log with id {id} -> specified by the user
     @GetMapping("/service-logs/{id}")
     ServiceLog getServiceLog(@PathVariable Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new ServiceLogNotFoundException(id));
     }
 
+    //Delete the specified log with id {id}
     @DeleteMapping("/service-logs/{id}")
     void deleteServiceLog(@PathVariable Long id) {
         repository.deleteById(id);
     }
 
+    //Take a request from the user
     @PostMapping("/primes")
     PrimeGeneratorResponse getPrimes(@RequestBody PrimeGeneratorRequest request){
         return primeGeneratorService.getPrimes(request);
