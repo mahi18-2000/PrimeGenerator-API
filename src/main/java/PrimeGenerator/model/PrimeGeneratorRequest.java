@@ -3,21 +3,21 @@
 package PrimeGenerator.model;
 
 public class PrimeGeneratorRequest {
-    private final String userID;
+    private final String userId;
     private final int rangeStart;
     private final int rangeEnd;
     private final Algorithm algorithm;
 
-    public PrimeGeneratorRequest(String userID, int rangeStart, int rangeEnd, Algorithm algorithm) {
-        this.userID = userID;
+    public PrimeGeneratorRequest(String userId, int rangeStart, int rangeEnd, Algorithm algorithm) {
+        this.userId = userId;
         this.rangeStart = rangeStart;
         this.rangeEnd = rangeEnd;
         this.algorithm = algorithm;
     }
 
 
-    public String getUserID() {
-        return this.userID;
+    public String getUserId() {
+        return this.userId;
     }
 
     public int getRangeStart() {

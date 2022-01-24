@@ -42,7 +42,7 @@ public class PrimeGeneratorService {
         // Recording the stop time
         long stopTime = System.nanoTime();
         ServiceLog serviceLog = new ServiceLog();
-        serviceLog.setUserId(request.getUserID());
+        serviceLog.setUserId(request.getUserId());
         serviceLog.setAlgorithm(request.getAlgorithm());
         serviceLog.setRange(range);
         serviceLog.setTimestamp(timestamp);
