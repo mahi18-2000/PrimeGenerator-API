@@ -3,8 +3,8 @@ This is a simple API build using spring-boot (Java-based framework) and H2 Datab
 You can use this to generate prime numbers within a given range as per user request.  
 
 ## How to Run
-   This application is build using Mevan tool. So, make sure that you are using JDK 1.8 and have installed Maven 3.x  
-   If you have not installed Mevan yet, refer to the below link. 
+   This application use Maven to manage its dependencies. So, make sure that you are using JDK 1.8 and have installed Maven 3.x  
+   If you have not installed Maven yet, refer to the below link. 
         
    https://maven.apache.org/download.cgi
       
@@ -30,6 +30,8 @@ You can use this to generate prime numbers within a given range as per user requ
    ```curl 
     $ curl -X POST localhost:8080/primes -H 'Content-type:application/json' -d '{"userId" : "exampleUser","rangeStart" : 1,"rangeEnd" : 20,"algorithm" : "SIEVE"}'
    ```
+     
+     
    |Field|Description|
    |:---:|:---:|
    |userId|Provide your userId|
@@ -83,11 +85,11 @@ You can use this to generate prime numbers within a given range as per user requ
 ```
    If you are using Intellij IDE, then use:
 ```
-          Go to the Mevan tool window, click Lifecycle then Run test.    
+          Go to the Maven tool window, click Lifecycle then Run test.    
   or
-          Press ``` Ctrl``` twice to open Run Anything then type ``` mvn clean test ``` then enter.      
+          Press Ctrl twice to open Run Anything then type mvn clean test then enter.      
   or 
-          either Right-click and ``` Run ``` AlgorithmTests file 
+          either Right-click and Run AlgorithmTests file 
 ```   
    
 
