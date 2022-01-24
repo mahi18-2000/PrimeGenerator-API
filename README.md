@@ -44,7 +44,7 @@ You can use this to generate prime numbers within a given range as per user requ
    
 ###   Retrieve all the User logs 
 ```
-            https://localhost:8080/service-logs
+            http://localhost:8080/service-logs
   or
             $ curl -v localhost:8080/service-logs 
 ```
