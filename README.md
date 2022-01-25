@@ -37,7 +37,7 @@ You can use this to generate prime numbers within a given range as per user requ
    |userId|Provide your userId|
    |rangeStart|The lower limit of the range|
    |rangeEnd|The upper limit of the range|
-   |algorithm|The algorithm which you want to use for generating prime numbers.  You have two option for algorithm i.e. "SIEVE" and "ITERATIVE"|    
+   |algorithm|The algorithm which you want to use for generating prime numbers.<br /> You have two option for algorithm i.e. "SIEVE" and "ITERATIVE"|    
 
    ``` Note: ```If you are using Windows Command Prompt to issue cURL commands, chances are the above command won’t work properly. You must either pick a terminal that support single quoted arguments, or use double quotes and then escape the ones inside the JSON or either you can use ``` Postman``` to post a request.
       
